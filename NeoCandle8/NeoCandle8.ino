@@ -68,9 +68,11 @@ void setup() {
 // 4. flutter() = the candle needs air!
 
 void loop() {
-  burn(10);
+  burn(2);
   
   //after running for a bit goto sleep until button pushed
+  strip.fill(strip.Color(0,0,0));
+  strip.show();
   system_sleep();
 
   //strip.fill(strip.Color(250,0,0));
@@ -84,13 +86,13 @@ void loop() {
   //sleep_mode();                          // here the device is actually put to sleep!!
   //delay(6000);
   //system_sleep();
-  flicker(5);
-  burn(8);
-  flutter(6);
-  burn(3);
-  on(10);
-  burn(10);
-  flicker(10);
+  //flicker(5);
+  //burn(8);
+  //flutter(6);
+  //burn(3);
+  //on(10);
+  //burn(10);
+  //flicker(10);
 
 }
 
