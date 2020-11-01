@@ -61,12 +61,6 @@ void setup() {
   sbi(PCMSK,PCINT1); // Which pins are affected by the interrupt
 }
 
-// In loop, call CANDLE STATES, with duration in seconds
-// 1. on() = solid yellow
-// 2. burn() = candle is burning normally, flickering slightly
-// 3. flicker() = candle flickers noticably
-// 4. flutter() = the candle needs air!
-
 void loop() {
   burn(2);
   
@@ -74,25 +68,6 @@ void loop() {
   strip.fill(strip.Color(0,0,0));
   strip.show();
   system_sleep();
-
-  //strip.fill(strip.Color(250,0,0));
-  //strip.show();
-  //delay(2000);
-  //delay(6000);
-  //strip.fill(strip.Color(0,0,0));
-  //strip.show();
-  //set_sleep_mode(SLEEP_MODE_PWR_DOWN);   // sleep mode is set here
-  //sleep_enable();                          // enables the sleep bit in the mcucr register so sleep is possible
-  //sleep_mode();                          // here the device is actually put to sleep!!
-  //delay(6000);
-  //system_sleep();
-  //flicker(5);
-  //burn(8);
-  //flutter(6);
-  //burn(3);
-  //on(10);
-  //burn(10);
-  //flicker(10);
 
 }
 
