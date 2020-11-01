@@ -50,7 +50,7 @@ void setup() {
   flickDelay = (cycleTime / 2) / flickerDepth;
   flutLow = grnHigh - flutterDepth;
   flutDelay = ((cycleTime / 2) / flutterDepth);
-  setup_watchdog(8); // approximately 4 seconds sleep  
+  //setup_watchdog(8); // approximately 4 seconds sleep  
   strip.begin();
   strip.show();
 
